@@ -1,9 +1,9 @@
 """
 Нахождение максимального и минимального числа.
 """
-a = int(input())
-b = int(input())
-c = int(input())
+a = int(input('Введите первое число :'))
+b = int(input('Введите второе число :'))
+c = int(input('Введите третье число :'))
 if a >= b and a >= c and b >= c:
     print(a)
     print(c)
