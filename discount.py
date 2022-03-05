@@ -1,5 +1,6 @@
+"""Пример расчета стоимости товаров с учетом скидок"""
 def discounted(price, discount, max_discount = 50):
-    price = abs(float(price))
+    price = abs(float(price)) # Приведение к числу с плавающей точкой
     discount = abs(float(discount))
     max_discount = abs(float(max_discount))
     if max_discount > 99:
@@ -10,4 +11,4 @@ def discounted(price, discount, max_discount = 50):
         price_with_discount = price - price * discount / 100
     return (price_with_discount)
 
-#print(discounted(100, 49))
+print(discounted(250, 45))
